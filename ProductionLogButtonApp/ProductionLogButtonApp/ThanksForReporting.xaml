@@ -1,0 +1,42 @@
+﻿<Window x:Class="ProductionLogButtonApp.ThanksForReporting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductionLogButtonApp"
+        mc:Ignorable="d"
+        Title="ThanksForReporting" Height="100" Width="220"
+         Top="50"
+        Left="5"
+        Topmost="True"
+        WindowStyle="None"
+        AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" >
+            <Button x:Name="btnAdd" Margin="-180,0,0,0" Click="ButtonAddName_Click2" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Stroke="Red" StrokeThickness="4" Width="40" Height="40" >
+                                <Ellipse.Fill>
+                                    <SolidColorBrush Color="Red" Opacity="0"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Ellipse Stroke="Red" StrokeThickness="4" Width="13" Height="13" >
+                                <Ellipse.Fill>
+                                    <SolidColorBrush Color="Red" Opacity="0"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Label FontWeight="Bold" FontSize="20">Thanks for reporting!</Label>
+        </StackPanel>
+    </Grid>
+</Window>
